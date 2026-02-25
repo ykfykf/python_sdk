@@ -22,7 +22,7 @@ setup(
     description="Volcengine SDK for Python",
     license="Apache License 2.0",
     platforms="any",
-    url="https://github.com/volcengine/volcengine-python-sdk",
+    url="https://github.com/ykfykf/python_sdk",
     extras_require={
         "ark": [
             "pydantic>=1.9.0, <3",
