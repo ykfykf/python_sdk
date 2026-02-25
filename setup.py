@@ -2,7 +2,7 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "volcengine-python-sdk"
+NAME = "ykf-python-sdk"
 VERSION = "5.0.9"
 
 # To install the library, run the following

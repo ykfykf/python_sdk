@@ -1,5 +1,5 @@
 [project]
-name = "volcengine-python-sdk"
+name = "ykf-python-sdk"
 version = "5.0.9"
 authors = [
     {name = "volc-engine", email = "volc-sdk-team@bytedance.com"},
