@@ -60,9 +60,11 @@ jobs:
         run: |
           CHANGELOG_FILE=".changelog/${{ steps.version.outputs.tag }}.md"
           if [ -f "$CHANGELOG_FILE" ]; then
-            echo "content<<EOF" >> $GITHUB_OUTPUT
+            delimiter="$(openssl rand -hex 8)"
+            echo "content<<$delimiter" >> $GITHUB_OUTPUT
             cat "$CHANGELOG_FILE" >> $GITHUB_OUTPUT
-            echo "EOF" >> $GITHUB_OUTPUT
+            echo "" >> $GITHUB_OUTPUT
+            echo "$delimiter" >> $GITHUB_OUTPUT
           else
             echo "content=Release ${{ steps.version.outputs.tag }}" >> $GITHUB_OUTPUT
           fi
